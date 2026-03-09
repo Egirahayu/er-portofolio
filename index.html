@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/ER.png" />
+
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <nav class="sticky top-0 z-50 bg-gray-800">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button
+              type="button"
+              command="--toggle"
+              commandfor="mobile-menu"
+              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500"
+            >
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-6 in-aria-expanded:hidden"
+              >
+                <path
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                data-slot="icon"
+                aria-hidden="true"
+                class="size-6 not-in-aria-expanded:hidden"
+              >
+                <path
+                  d="M6 18 18 6M6 6l12 12"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex shrink-0 items-center">
+              <h1
+                class="text-white text-2xl"
+                style="font-family: Kaushan-Script"
+              >
+                <a href="" id="logo">Egi Rahayu</a>
+              </h1>
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a
+                  href=""
+                  aria-current="page"
+                  class="nav-link rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                >
+                  About
+                </a>
+
+                <a
+                  href="#skill"
+                  class="nav-link rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                >
+                  My Skills
+                </a>
+
+                <a
+                  href="#experience"
+                  class="nav-link rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                >
+                  Experiences
+                </a>
+
+                <a
+                  href="#contact"
+                  class="nav-link rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+        <div class="space-y-1 px-2 pt-2 pb-3">
+          <a
+            href=""
+            aria-current="page"
+            class="nav-link block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+            >About</a
+          >
+          <a
+            href="#skill"
+            class="nav-link block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+            >My Skills</a
+          >
+          <a
+            href="#experience"
+            class="nav-link block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+            >Experiences</a
+          >
+          <a
+            href="#contact"
+            class="nav-link block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
+            >Contact</a
+          >
+        </div>
+      </el-disclosure>
+    </nav>
+
+    <main>
+      <div class="overflow-hidden bg-white py-18 sm:py-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+          >
+            <div class="lg:pt-6 lg:pr-8">
+              <div class="py-8 lg:max-w-lg lg:py-0">
+                <p
+                  class="mt-6 text-2xl text-center font-bold tracking-tight text-pretty text-gray-900 sm:text-3xl"
+                  style="font-family: Kaushan-Script"
+                >
+                  My Name is Mohamad Egi Rahayu
+                </p>
+                <p
+                  class="mt-6 text-lg/8 text-center font-semibold text-gray-700 lg:text-justify"
+                >
+                  A passionate full stack software developer, experienced in
+                  building websites with PHP programming language and Laravel
+                  framework.
+                </p>
+              </div>
+
+              <div
+                class="sosmed py-3 lg:py-6 flex gap-3 place-content-center lg:place-content-start"
+              >
+                <a
+                  href="https://github.com/Egirahayu"
+                  class="flex items-center justify-center w-14 h-14 bg-gray-600 text-white rounded-full hover:bg-black transition"
+                >
+                  <i class="fa-brands fa-github text-2xl"></i>
+                </a>
+
+                <a
+                  href="https://linkedin.com/in/egirahayu"
+                  class="flex items-center justify-center w-14 h-14 bg-blue-800 text-white rounded-full hover:bg-black transition"
+                >
+                  <i class="fa-brands fa-linkedin text-2xl"></i>
+                </a>
+
+                <a
+                  href="mailto:mohammadegirahayu@gmail.com"
+                  class="flex items-center justify-center w-14 h-14 bg-orange-800 text-white rounded-full hover:bg-black transition"
+                >
+                  <i class="fa-solid fa-envelope text-2xl"></i>
+                </a>
+              </div>
+
+              <div
+                class="resume pt-10 flex gap-4 place-content-center lg:place-content-start"
+              >
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
+            <img
+              src="assets/img/Web.png"
+              alt="Product screenshot"
+              class="mt-6 rounded-xl shadow-xl ring-1 ring-gray-400/10 place-items-center md:-ml-4 lg:-ml-0"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="skill">
+      <main>
+        <div class="overflow-hidden bg-white py-16 sm:py-24">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <img
+                src="assets/img/Program.PNG"
+                alt="Programming"
+                class="order-2 lg:order-1 w-full h-auto rounded-xl shadow-xl ring-1 ring-gray-400/10"
+              />
+
+              <div class="order-1 lg:order-2 lg:max-w-lg">
+                <p
+                  class="text-3xl font-sans text-center font-bold tracking-tight text-gray-900 sm:text-3xl"
+                >
+                  My Skills
+                </p>
+
+                <div class="skill mt-6">
+                  <ul
+                    class="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 gap-4 text-center"
+                  >
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-html5 text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">HTML</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-css3-alt text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">CSS</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-square-js text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">JavaScript</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-php text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">PHP</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-laravel text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">Laravel</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <img
+                        src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                        class="w-8 h-8"
+                        alt="Tailwind CSS"
+                      />
+                      <span class="mt-2 text-sm font-medium">Tailwind CSS</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-bootstrap text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">Bootstrap</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-npm text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">NPM</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-solid fa-database text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">MySQL</span>
+                    </li>
+
+                    <li
+                      class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                    >
+                      <i class="fa-brands fa-git-alt text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">Git</span>
+                    </li>
+                  </ul>
+
+                  <div class="my-6">
+                    <p class="mb-2 font-medium">Frontend</p>
+                    <div class="w-full bg-gray-200 rounded-full h-5">
+                      <div class="bg-blue-800 h-5 rounded-full w-[60%]"></div>
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <p class="mb-2 font-medium">Backend</p>
+                    <div class="w-full bg-gray-200 rounded-full h-5">
+                      <div class="bg-blue-800 h-5 rounded-full w-[85%]"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <main>
+      <div class="overflow-hidden bg-white py-16 sm:py-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2
+            class="text-3xl font-sans font-bold text-gray-900 mb-8 text-center md:text-left"
+          >
+            Education
+          </h2>
+
+          <div
+            class="flex flex-col items-center text-center md:flex-row md:items-center md:text-left gap-6 py-6 border-b border-gray-300 hover:border-b-4 hover:border-gray-500 transition-all duration-200"
+          >
+            <img
+              src="assets/img/UNPAS.png"
+              alt="Universitas Pasundan"
+              class="w-20 h-20 object-contain"
+            />
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900">
+                Pasundan University
+              </h3>
+
+              <p class="text-gray-800 font-medium">
+                Bachelor of Informatics Engineering
+              </p>
+
+              <p class="text-gray-500 mt-1">September 2020 - November 2024</p>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center text-center md:flex-row md:items-center md:text-left gap-6 py-6 border-b border-gray-300 hover:border-b-4 hover:border-gray-500 transition-all duration-200"
+          >
+            <img
+              src="assets/img/SMKN 1 Panynigkiran.png"
+              alt="SMKN 1 Panyingkiran"
+              class="w-20 h-20 object-contain"
+            />
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900">
+                State Vocational High School 1 Panyingkiran
+              </h3>
+
+              <p class="text-gray-800 font-medium">Software Engineering</p>
+
+              <p class="text-gray-500 mt-1">July 2017 - May 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="project">
+      <main>
+        <div class="overflow-hidden bg-white py-16 sm:py-24">
+          <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2
+              class="text-3xl font-sans font-bold text-center text-gray-900 mb-12"
+            >
+              Project
+            </h2>
+
+            <div
+              class="shadow-lg mt-6 overflow-hidden hover:shadow-2xl transition duration-300 rounded-xl"
+            >
+              <div
+                class="w-full aspect-video bg-gray-100 flex items-center justify-center"
+              >
+                <img
+                  src="assets/img/2DaysNews.PNG"
+                  alt="2DayNews"
+                  class="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-xl text-center font-semibold text-gray-900">
+                  <a
+                    href="https://github.com/Babett10/2DaysNews"
+                    target="_blank"
+                    class="hover:underline"
+                  >
+                    Project MSIB - 2DayNews | Backend
+                  </a>
+                </h3>
+
+                <p class="text-gray-600 text-justify mt-3 text-sm">
+                  A dynamic news website developed using native PHP and MySQL
+                  that allows administrators to manage news content through a
+                  simple content management system. The platform enables users
+                  to browse categorized news articles, view detailed content,
+                  and stay updated with the latest information.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="mt-6 shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 rounded-xl"
+            >
+              <div class="w-full aspect-video flex items-center justify-center">
+                <img
+                  src="assets/img/Affomato Western.PNG"
+                  alt="Affomato Western"
+                  class="max-w-full object-contain"
+                />
+              </div>
+
+              <div class="p-6">
+                <h3 class="text-xl text-center font-semibold text-gray-900">
+                  <a
+                    href="https://github.com/HafiszahSaidatul/KelompokExypnos_RestaurantWestren"
+                    target="_blank"
+                    class="hover:underline"
+                  >
+                    Project Affomato Western | Backend
+                  </a>
+                </h3>
+
+                <p class="text-gray-600 text-justify mt-3 text-sm">
+                  Affomato Western is a web-based application that showcases a
+                  variety of western food menus, developed using Laravel 8 and
+                  Bootstrap. The website is designed with a responsive
+                  interface, allowing users to access it smoothly from both
+                  desktop and mobile devices. It manages food menu data through
+                  a structured database, enabling information such as menu name,
+                  description, price, and images to be displayed clearly and
+                  efficiently. This project demonstrates the ability to build
+                  web applications using PHP, Laravel, and responsive frontend
+                  integration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section id="experience">
+      <main>
+        <div class="overflow-hidden bg-white py-17 sm:py-24">
+          <div class="py-6 mx-auto max-w-7xl px-6 lg:px-8">
+            <h2
+              class="text-3xl font-sans font-bold text-gray-900 mb-8 text-center md:text-left"
+            >
+              Experiences
+            </h2>
+
+            <div
+              class="border-b border-gray-300 pb-8 hover:border-b-4 hover:border-gray-500 transition-all duration-200 text-center md:text-left"
+            >
+              <div
+                class="flex justify-center md:justify-start items-center gap-4"
+              >
+                <img
+                  src="assets/img/Kampus Merdeka.png"
+                  alt="Kampus Merdeka"
+                  class="w-20 h-20 object-contain"
+                />
+                <img
+                  src="assets/img/MSIB.png"
+                  alt="MSIB"
+                  class="w-30 h-30 object-contain"
+                />
+                <img
+                  src="assets/img/Eduwork.png"
+                  alt="Eduwork"
+                  class="w-30 h-30 object-contain"
+                />
+              </div>
+
+              <div>
+                <h3 class="text-2xl lg:text-xl font-semibold text-gray-900">
+                  MSIB Eduwork | Internship
+                </h3>
+
+                <p class="text-xl lg:text-md text-gray-800 font-medium mt-1">
+                  Full Stack Web Development
+                </p>
+
+                <p class="text-large lg:text-sm text-gray-500 mt-1">
+                  August 2023 - December 2023
+                </p>
+              </div>
+
+              <div class="py-6 flex justify-center md:justify-start">
+                <a
+                  href="https://drive.google.com/file/d/1g2D341JiuFeIPxbxiIGSp6XaGvlJ43Sh/view?usp=drivesdk"
+                  class="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white bg-black rounded-lg hover:bg-gray-800 transition"
+                >
+                  View Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <section id="contact">
+      <main>
+        <div class="overflow-hidden bg-white py-17 sm:py-24">
+          <div class="py-6 mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div class="text-center md:text-left order-2 md:order-1">
+                <h2 class="text-3xl font-sans font-bold text-gray-900 mb-4">
+                  Contact Me
+                </h2>
+
+                <p class="text-gray-600 mb-6">
+                  If you are interested in working together, have a project
+                  idea, or just want to say hello, feel free to contact me. I
+                  will try to respond as soon as possible.
+                </p>
+
+                <div class="flex gap-3 justify-center md:justify-start">
+                  <a
+                    href="https://github.com/Egirahayu"
+                    class="flex items-center justify-center w-14 h-14 bg-gray-600 text-white rounded-full hover:bg-black transition"
+                  >
+                    <i class="fa-brands fa-github text-2xl"></i>
+                  </a>
+
+                  <a
+                    href="https://linkedin.com/in/egirahayu"
+                    class="flex items-center justify-center w-14 h-14 bg-blue-800 text-white rounded-full hover:bg-black transition"
+                  >
+                    <i class="fa-brands fa-linkedin text-2xl"></i>
+                  </a>
+                </div>
+
+                <div class="mt-6 flex justify-center md:justify-start">
+                  <a
+                    href="mailto:mohamadegirahayu@gmail.com"
+                    class="px-6 py-3 bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition"
+                  >
+                    Send Email
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex justify-center order-1 md:order-2">
+                <img
+                  src="assets/img/Egi.png"
+                  alt="Mohamad Egi Rahayu"
+                  class="w-80 h-80 rounded-full object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer class="border-t bg-gray-900 text-gray-300 py-3 text-center text-sm">
+      <p>© 2026 Mohamad Egi Rahayu</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+  </body>
+</html>

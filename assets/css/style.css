@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Kaushan-Script";
+  src: url("../font/Kaushan-Script/KaushanScript-Regular.otf");
+}
