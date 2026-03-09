@@ -76,7 +76,7 @@
                   aria-current="page"
                   class="nav-link rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                 >
-                  About
+                  About Me
                 </a>
 
                 <a
@@ -87,10 +87,10 @@
                 </a>
 
                 <a
-                  href="#experience"
+                  href="#project"
                   class="nav-link rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white"
                 >
-                  Experiences
+                  Project
                 </a>
 
                 <a
@@ -111,7 +111,7 @@
             href=""
             aria-current="page"
             class="nav-link block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-            >About</a
+            >About Me</a
           >
           <a
             href="#skill"
@@ -119,9 +119,9 @@
             >My Skills</a
           >
           <a
-            href="#experience"
+            href="#project"
             class="nav-link block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white"
-            >Experiences</a
+            >Project</a
           >
           <a
             href="#contact"
@@ -141,10 +141,12 @@
             <div class="lg:pt-6 lg:pr-8">
               <div class="py-8 lg:max-w-lg lg:py-0">
                 <p
-                  class="mt-6 text-2xl text-center font-bold tracking-tight text-pretty text-gray-900 sm:text-3xl"
+                  class="mt-6 text-3xl text-center font-bold tracking-tight text-pretty text-gray-900"
                   style="font-family: Kaushan-Script"
                 >
-                  My Name is Mohamad Egi Rahayu
+                  My Name is <br class="sm:hidden" />
+                  <span class="hidden sm:inline"></span>
+                  Mohamad Egi Rahayu
                 </p>
                 <p
                   class="mt-6 text-lg/8 text-center font-semibold text-gray-700 lg:text-justify"
@@ -173,8 +175,8 @@
                 </a>
 
                 <a
-                  href="mailto:mohammadegirahayu@gmail.com"
-                  class="flex items-center justify-center w-14 h-14 bg-orange-800 text-white rounded-full hover:bg-black transition"
+                  href="mailto:mohamadegirahayu@gmail.com"
+                  class="flex items-center justify-center w-14 h-14 bg-red-800 text-white rounded-full hover:bg-black transition"
                 >
                   <i class="fa-solid fa-envelope text-2xl"></i>
                 </a>
@@ -184,7 +186,7 @@
                 class="resume pt-10 flex gap-4 place-content-center lg:place-content-start"
               >
                 <a
-                  href="#"
+                  href="https://drive.google.com/file/d/15ECn29FvL9pnMbHSd2Iz5iC14LZTJQcK/view?usp=drivesdk"
                   class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition"
                 >
                   Resume
@@ -220,9 +222,21 @@
                 </p>
 
                 <div class="skill mt-6">
-                  <ul
-                    class="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 gap-4 text-center"
-                  >
+                  <div class="my-6">
+                    <p class="mb-2 font-medium">Frontend</p>
+                    <div class="w-full bg-gray-200 rounded-full h-5">
+                      <div class="bg-blue-800 h-5 rounded-full w-[60%]"></div>
+                    </div>
+                  </div>
+
+                  <div class="mb-6">
+                    <p class="mb-2 font-medium">Backend</p>
+                    <div class="w-full bg-gray-200 rounded-full h-5">
+                      <div class="bg-blue-800 h-5 rounded-full w-[85%]"></div>
+                    </div>
+                  </div>
+
+                  <ul class="flex flex-wrap justify-center gap-4">
                     <li
                       class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
                     >
@@ -286,31 +300,17 @@
                     <li
                       class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
                     >
-                      <i class="fa-solid fa-database text-3xl"></i>
-                      <span class="mt-2 text-sm font-medium">MySQL</span>
+                      <i class="fa-brands fa-git-alt text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">Git</span>
                     </li>
 
                     <li
                       class="flex flex-col items-center justify-center p-4 bg-gray-100 rounded-lg hover:bg-gray-700 hover:text-white transition"
                     >
-                      <i class="fa-brands fa-git-alt text-3xl"></i>
-                      <span class="mt-2 text-sm font-medium">Git</span>
+                      <i class="fa-solid fa-database text-3xl"></i>
+                      <span class="mt-2 text-sm font-medium">MySQL</span>
                     </li>
                   </ul>
-
-                  <div class="my-6">
-                    <p class="mb-2 font-medium">Frontend</p>
-                    <div class="w-full bg-gray-200 rounded-full h-5">
-                      <div class="bg-blue-800 h-5 rounded-full w-[60%]"></div>
-                    </div>
-                  </div>
-
-                  <div class="mb-6">
-                    <p class="mb-2 font-medium">Backend</p>
-                    <div class="w-full bg-gray-200 rounded-full h-5">
-                      <div class="bg-blue-800 h-5 rounded-full w-[85%]"></div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -334,7 +334,7 @@
             <img
               src="assets/img/UNPAS.png"
               alt="Universitas Pasundan"
-              class="w-20 h-20 object-contain"
+              class="w-28 h-28 md:w-20 md:h-20 object-contain"
             />
 
             <div>
@@ -346,7 +346,9 @@
                 Bachelor of Informatics Engineering
               </p>
 
-              <p class="text-gray-500 mt-1">September 2020 - November 2024</p>
+              <p class="text-gray-500 mt-1 text-sm">
+                September 2020 - November 2024 | IPK 3.56
+              </p>
             </div>
           </div>
 
@@ -356,7 +358,7 @@
             <img
               src="assets/img/SMKN 1 Panynigkiran.png"
               alt="SMKN 1 Panyingkiran"
-              class="w-20 h-20 object-contain"
+              class="w-28 h-28 md:w-20 md:h-20 object-contain"
             />
 
             <div>
@@ -366,7 +368,7 @@
 
               <p class="text-gray-800 font-medium">Software Engineering</p>
 
-              <p class="text-gray-500 mt-1">July 2017 - May 2020</p>
+              <p class="text-gray-500 mt-1 text-sm">July 2017 - May 2020</p>
             </div>
           </div>
         </div>
@@ -380,7 +382,7 @@
             <h2
               class="text-3xl font-sans font-bold text-center text-gray-900 mb-12"
             >
-              Project
+              My Project
             </h2>
 
             <div
@@ -398,17 +400,17 @@
               </div>
 
               <div class="p-6">
-                <h3 class="text-xl text-center font-semibold text-gray-900">
+                <h3 class="text-2xl text-center font-semibold text-gray-900">
                   <a
                     href="https://github.com/Babett10/2DaysNews"
                     target="_blank"
                     class="hover:underline"
                   >
-                    Project MSIB - 2DayNews | Backend
+                    Project MSIB - 2DayNews
                   </a>
                 </h3>
 
-                <p class="text-gray-600 text-justify mt-3 text-sm">
+                <p class="text-gray-600 text-justify mt-3 text-sm md:text-xl">
                   A dynamic news website developed using native PHP and MySQL
                   that allows administrators to manage news content through a
                   simple content management system. The platform enables users
@@ -430,17 +432,17 @@
               </div>
 
               <div class="p-6">
-                <h3 class="text-xl text-center font-semibold text-gray-900">
+                <h3 class="text-2xl text-center font-semibold text-gray-900">
                   <a
                     href="https://github.com/HafiszahSaidatul/KelompokExypnos_RestaurantWestren"
                     target="_blank"
                     class="hover:underline"
                   >
-                    Project Affomato Western | Backend
+                    Project Affomato Western
                   </a>
                 </h3>
 
-                <p class="text-gray-600 text-justify mt-3 text-sm">
+                <p class="text-gray-600 text-justify mt-3 text-sm md:text-xl">
                   Affomato Western is a web-based application that showcases a
                   variety of western food menus, developed using Laravel 8 and
                   Bootstrap. The website is designed with a responsive
@@ -472,9 +474,7 @@
             <div
               class="border-b border-gray-300 pb-8 hover:border-b-4 hover:border-gray-500 transition-all duration-200 text-center md:text-left"
             >
-              <div
-                class="flex justify-center md:justify-start items-center gap-4"
-              >
+              <div class="flex justify-center md:justify-start items-center">
                 <img
                   src="assets/img/Kampus Merdeka.png"
                   alt="Kampus Merdeka"
@@ -566,7 +566,7 @@
                 <img
                   src="assets/img/Egi.png"
                   alt="Mohamad Egi Rahayu"
-                  class="w-80 h-80 rounded-full object-contain"
+                  class="w-60 h-60 md:w-80 md:h-80 rounded-full object-contain"
                 />
               </div>
             </div>
@@ -575,8 +575,10 @@
       </main>
     </section>
 
-    <footer class="border-t bg-gray-900 text-gray-300 py-3 text-center text-sm">
-      <p>© 2026 Mohamad Egi Rahayu</p>
+    <footer
+      class="border-t bg-gray-900 text-gray-300 py-3 text-center text-large"
+    >
+      <p>Mohamad Egi Rahayu. Copyright &copy;2026.</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
